@@ -1,0 +1,78 @@
+.table-estetic tr {
+    background-color: black;
+    color: white;
+}
+
+.table-estetic tr {
+    margin: 0 1px;
+    background-color: #ffffffcc;
+    color: black;
+}
+
+.table-estetic tr:nth-of-type(odd) {
+    background-color: #000000cc;
+    color: rgb(255, 255, 255);
+
+}
+
+.table-estetic td,
+.table-estetic th {
+    padding: 20px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.table-estetic td img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 460px) {
+
+    .table-estetic td,
+    .table-estetic th {
+        padding: 0;
+    }
+
+    .table-estetic td img {
+        margin: 0;
+    }
+
+    .table-estetic tr {
+        margin: 0;
+    }
+
+    .table-estetic td,
+    .table-estetic th {
+        padding: 3px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 460px) and (max-width: 670px) {
+
+    .table-estetic {
+        width: 90%;
+    }
+
+    .table-estetic td,
+    .table-estetic th {
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (min-width: 1900px){
+    
+
+    
+    .table-estetic td,
+    .table-estetic th {
+        padding: 40px 60px;
+        font-size: 26px;
+    }
+    
+    .table-estetic td img {
+        width: 40px;
+    }
+    
+}

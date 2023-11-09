@@ -1,0 +1,57 @@
+.btn-link {
+    background: #000000cc;
+    width: 670px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.btn-link img{
+    width: 30px;
+    padding-left: 7px;
+}
+
+.btn-link a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    width: 100%;
+    padding: 10px 5px;
+    font: 600 18px "Arial";
+
+}
+.btn-link:hover{
+    background-color: #ffffffcc;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .btn-link { width: 270px;}
+
+
+    .btn-link a {
+        font: 600 16px "Arial";
+
+    }
+
+}
+
+@media only screen and (min-width: 460px) and (max-width: 670px) {
+    
+    .btn-link { width: 440px; }
+}
+
+@media only screen and (min-width: 1900px) {
+    
+    .btn-link { width: 1000px; }
+
+    .btn-link a {
+        padding: 20px 15px;
+        font-size: 28px;
+    }
+    .btn-link img{
+        width: 60px;
+    }
+}

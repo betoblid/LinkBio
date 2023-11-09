@@ -1,0 +1,58 @@
+.conteudo{ position: relative;}
+.banckground_video{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    object-fit: cover;
+}
+.container_main{ 
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.box_logo_user{
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    border-radius: 100%;
+    border-top: 5px solid #ffdf00;
+    border-bottom:  5px solid #009c3c;
+    border-left:  5px solid #ffdd00;
+    border-right:  5px solid #009c3b;
+}
+
+.container_hiperlinks{
+    position: relative;
+    z-index: 1;
+}
+.box_user{ position: relative;}
+.box_user h1{
+    font: 900 50px 'Ysabeau Infant', sans-serif;
+    text-shadow: 0 5px #000;
+    color: #fff;
+}
+.box_user h1::before{
+    content: "";
+    width: 24%;
+    background: linear-gradient(to left,#ffdf00,#009c3b);
+    position: absolute;
+    bottom: -5px;
+    height: 5px;
+}
+@media (Orientation: landscape) and (max-height: 500px) {
+    .container_main,.banckground_video{height: 160vh; } 
+}
+ @media (Orientation: landscape) and (min-height: 501px) and (max-height: 620px) {
+  
+    .container_main,.banckground_video{  height: 120vh;}
+ }
+
+@media (min-width:1900px){
+
+    .box_user h1{  font-size: 120px;  }
+    .box_logo_user{  width: 300px; height: 300px; }
+}
